@@ -1,7 +1,7 @@
 
 
-let benchmark_requests = 1;  //Cantidad de requests simultaneos a enviar.
-let clients_in_db = 10000; //Se genera 
+let benchmark_requests = 10;  //Cantidad de requests simultaneos a enviar.
+let clients_in_db = 100000; //Se genera 
 let clientes = false; //Consulta por clientes ? cambie a 'false' para consultar por ciudad
 
 
