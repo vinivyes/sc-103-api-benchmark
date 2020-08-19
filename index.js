@@ -2,7 +2,7 @@
 
 let benchmark_requests = 1;  //Cantidad de requests simultaneos a enviar.
 let clients_in_db = 10000; //Se genera 
-let clientes = true; //Consulta por clientes ? cambie a 'false' para consultar por ciudad
+let clientes = false; //Consulta por clientes ? cambie a 'false' para consultar por ciudad
 
 
 const request = require('request');
@@ -43,7 +43,7 @@ const BenchmarkCache = (test) => {
         }
         s++;
         if(s == test){ 
-            console.log(`En promedio la consulta duro ${total_time / requests }ms en la Base de datos para ${benchmark_requests} consultas simultaneas`)
+            console.log(`En promedio la consulta duro ${total_time / requests }ms en el cache para ${benchmark_requests} consultas simultaneas`)
         }
     });
 
